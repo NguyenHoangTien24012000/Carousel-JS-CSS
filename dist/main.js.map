@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["slider","document","querySelector","leftArrow","rightArrow","addEventListener","style","transform"],"mappings":"AAAA,MAAMA,OAASC,SAASC,cAAc,WAEhCC,UAAYF,SAASC,cAAc,SACnCE,WAAaH,SAASC,cAAc,UAE1CE,WAAWC,iBAAiB,SAAS,WACjCL,OAAOM,MAAMC,UAAY","file":"main.js"}

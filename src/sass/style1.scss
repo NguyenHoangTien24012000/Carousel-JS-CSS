@@ -1,0 +1,76 @@
+@import './reset.scss';
+@import './varibles.scss';
+
+.container {
+    width: 50%;
+    margin: 10px auto;
+    .carousel{
+        border: 2px solid #ccc;
+        height : 400px;
+        overflow: hidden;
+        position: relative;
+        .slider{
+            height: 100%;
+            display: flex;
+            width: 400%;
+            // transform: translateX(-25%);
+            transition: all 0.5s;
+            section {
+                flex-basis: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .controls{
+            .arrow{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                color: tomato;
+                &.left {
+                    left: 10px; 
+                    font-size: 30px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    border: 1px solid tomato;
+                    border-radius: 50%;
+                }
+                &.right{
+                    right: 10px;
+                    font-size: 30px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    border: 1px solid tomato;
+                    border-radius: 50%;
+                }
+            }
+            ul{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%);
+                list-style: none;
+                display: flex;
+                li{
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid tomato;
+                    border-radius: 50%;
+                    margin: 5px;
+                    cursor: pointer;
+                    &.selected{
+                        background-color: tomato;
+                    }
+                }
+            }
+        } 
+      
+    }
+}
+

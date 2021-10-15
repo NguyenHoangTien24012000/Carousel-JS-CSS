@@ -1,0 +1,2 @@
+const slider=document.querySelector(".slider"),leftArrow=document.querySelector(".left"),rightArrow=document.querySelector(".right");rightArrow.addEventListener("click",(function(){slider.style.transform="translate(-25%)"}));
+//# sourceMappingURL=main.js.map
