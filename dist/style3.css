@@ -9,18 +9,18 @@ body {
 }
 
 .carousel-container {
-  width: 1080px;
+  width: 600px;
   margin: 50px auto;
   min-height: 200px;
   position: relative;
 }
 .carousel-container .track {
-  overflow: hidden;
   display: flex;
+  transition: all 0.5s;
 }
 .carousel-container .track .card-container {
   flex-shrink: 0;
-  width: 190px;
+  width: 200px;
   height: 250px;
   padding-right: 15px;
 }
@@ -57,5 +57,24 @@ body {
   text-align: center;
   border: 1px solid tomato;
   border-radius: 50%;
+}
+.carousel-container .controls ul {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+}
+.carousel-container .controls ul li {
+  width: 10px;
+  height: 10px;
+  border: 2px solid tomato;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+.carousel-container .controls ul li.selected {
+  background-color: tomato;
 }
 /*# sourceMappingURL=style3.css.map */
