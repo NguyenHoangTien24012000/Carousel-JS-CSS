@@ -10,9 +10,9 @@ const replace = require('gulp-replace');
 const replaceB = require('gulp-batch-replace');
 
 
-//replace data
+//replace data2
 
-gulp.task('renderBoxData', function() {   
+gulp.task('renderDataCarousel2', function() {   
     //array is dynamic
     var strData =  (fs.readFileSync("src/data/data.json", "utf8"));
    // console.log(data);
@@ -21,12 +21,12 @@ gulp.task('renderBoxData', function() {
     // console.log(data)y
     
     var arrdata=[];
-    var data=data[1];
+    var data=data[0];
     for(let i in data){arrdata.push(['%'+i+'%',data[i]])}
 
-        gulp.src(['src/test/js/renderBox.js'])
+        gulp.src(['src/test/replaceData/render-Carousel.js'])
             .pipe(replaceB(arrdata))
-			.pipe(gulp.dest('./src/js'));
+			.pipe(gulp.dest('./src/test/replaceData2'));
 });
 
 // render layout

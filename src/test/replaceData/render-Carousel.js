@@ -1,117 +1,122 @@
 function renderCarousel(){
-	var img1 ='', text1 ='', img2 ='', text2= '', img3 = '',text3 ='', img4 = '', text4= '';
+	var img1 ='%img1%', text1 ='%text1%', img2 ='%img2%', text2= '%text2%', img3 = '%img3%',text3 ='%text3%', img4 = '%img4%', text4= '%text4%', img5 ='%img5%', text5= '%text5%', img6= '%img6%', text6 = '%text6%', img7 = '%img7%', text7= '%text7%';
 
 	this.css=`* {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  .layout-carousel {
-    width: 700px;
-    background-color: #222222;
-    margin: 50px auto;
-    min-height: 400px;
-    border-top: 5px solid #e96833;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  .layout-carousel .carousel-title h1 {
-    margin: 20px;
-    color: #fff;
-  }
-  .layout-carousel .carousel-title h1 span {
-    color: #e96833;
-  }
-  .layout-carousel .carousel-container {
-    width: 100%;
-    padding-left: 20px;
-    position: relative;
-  }
-  .layout-carousel .carousel-container .track {
-    width: 100%;
-    display: flex;
-    transition: all 0.5s;
-  }
-  .layout-carousel .carousel-container .track .card-container {
-    flex-shrink: 0;
-    width: 250px;
-    height: 300px;
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
-  .layout-carousel .carousel-container .track .card-container .card-img {
-    width: 100%;
-    height: 50%;
-  }
-  .layout-carousel .carousel-container .track .card-container .card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .layout-carousel .carousel-container .track .card-container .card-text {
-    height: 50%;
-    background-color: #fff;
-  }
-  .layout-carousel .carousel-container .track .card-container .card-text p {
-    padding: 10px;
-    color: #000;
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .layout-carousel .carousel-container .controls .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #fff;
-    background-color: #e96833;
-  }
-  .layout-carousel .carousel-container .controls .arrow.left {
-    left: -10px;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border: 1px solid #e96833;
-    border-radius: 50%;
-    display: none;
-  }
-  .layout-carousel .carousel-container .controls .arrow.right {
-    top: 85px;
-    right: 19px;
-    font-size: 30px;
-    width: 35px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    border: 1px solid #e96833;
-    border-radius: 5px 0 0 5px;
-  }
-  .layout-carousel .carousel-container .controls ul {
-    position: absolute;
-    top: -40px;
-    right: 40px;
-    list-style: none;
-    display: flex;
-  }
-  .layout-carousel .carousel-container .controls ul li {
-    width: 10px;
-    height: 10px;
-    background-color: #404040;
-    border-radius: 50%;
-    margin: 5px;
-    cursor: pointer;
-  }
-  .layout-carousel .carousel-container .controls ul li.selected {
-    background-color: #e96833;
-  }
-  /*# sourceMappingURL=styleCarousel.css.map */`;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.layout-carousel {
+  width: 700px;
+  background-color: #222222;
+  margin: 50px auto;
+  min-height: 400px;
+  border-top: 5px solid #e96833;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.layout-carousel .carousel-title h1 {
+  margin: 20px;
+  color: #fff;
+}
+.layout-carousel .carousel-title h1 span {
+  color: #e96833;
+}
+.layout-carousel .carousel-container {
+  width: 100%;
+  padding-left: 20px;
+  position: relative;
+}
+.layout-carousel .carousel-container .track {
+  width: 100%;
+  display: flex;
+  transition: all 0.5s;
+}
+.layout-carousel .carousel-container .track .card-container {
+  flex-shrink: 0;
+  width: 250px;
+  height: 300px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.layout-carousel .carousel-container .track .card-container .card {
+  width: 100%;
+  height: 100%;
+}
+.layout-carousel .carousel-container .track .card-container .card .card-img {
+  width: 100%;
+  height: 50%;
+}
+.layout-carousel .carousel-container .track .card-container .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.layout-carousel .carousel-container .track .card-container .card .card-text {
+  height: 50%;
+  background-color: #fff;
+}
+.layout-carousel .carousel-container .track .card-container .card .card-text p {
+  padding: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.layout-carousel .carousel-container .controls .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+  background-color: #e96833;
+}
+.layout-carousel .carousel-container .controls .arrow.left {
+  left: -10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #e96833;
+  border-radius: 50%;
+  display: none;
+}
+.layout-carousel .carousel-container .controls .arrow.right {
+  top: 85px;
+  right: 19px;
+  font-size: 30px;
+  width: 35px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border: 1px solid #e96833;
+  border-radius: 5px 0 0 5px;
+}
+.layout-carousel .carousel-container .controls ul {
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  list-style: none;
+  display: flex;
+}
+.layout-carousel .carousel-container .controls ul li {
+  width: 10px;
+  height: 10px;
+  background-color: #404040;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+.layout-carousel .carousel-container .controls ul li.selected {
+  background-color: #e96833;
+}
+/*# sourceMappingURL=styleCarousel.css.map */`;
 	this.html=`<div class="layout-carousel">
     <div class="carousel-title">
         <h1 class="title-brand"><span>e</span>Magazine</h1>
@@ -120,44 +125,92 @@ function renderCarousel(){
         <div class="carousel-container">
             <div class="track">
                 <div class="card-container">
-                    <div class="card-img">
-                        <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
-                            alt="1">
-                    </div>
-                    <div class="card-text">
-                        <p>Vẫn mang phong cách đẹp, hiện đại, hoàn thiện tỉ mỉ như các chiếc máy tính Surface khác của Microsoft nhưng lần này hơi bầu hơn chút ở 4 góc máy</p>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card-img">
-                        <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
-                            alt="2">
-                    </div>
-                    <div class="card-text">
-                        <p>Việc sử dụng smartphone ngày nay không chỉ dừng lại ở nghe, gọi, xem, chơi nữa mà còn dùng nó như một công cụ sáng tạo và chia sẻ nội dung, hình ảnh, video,</p>
+                    <div class="card">
+                            <div class="card-img">
+                                <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>Vẫn mang phong cách đẹp, hiện đại, hoàn thiện tỉ mỉ như các chiếc máy tính Surface khác của Microsoft</p>
+                            </div>
                     </div>
                 </div>
                 <div class="card-container">
-                    <div class="card-img">
-                        <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
-                            alt="3">
-                    </div>
-                    <div class="card-text">
-                        <p>Bộ GTVT ban hành hướng dẫn tạm thời về việc đi lại của người dân, qua đó các địa phương chỉ cần làm xét nghiệm những người trở về từ các tỉnh có dịch bệnh ở mức 4, là mức cao nhất.</p>
+                    <div class="card">
+    
+                        <div class="card-img">
+                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
+                                alt="1">
+                        </div>
+                        <div class="card-text">
+                            <p>Việc sử dụng smartphone ngày nay không chỉ dừng lại ở nghe, gọi, xem, chơi nữa mà còn dùng nó như một </p>
+                        </div>
                     </div>
                 </div>
                 <div class="card-container">
-                    <div class="card-img">
-                        <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
-                            alt="4">
-                    </div>
-                    <div class="card-text">
-                        <p>OPPO Reno6 Pro 5G tại Việt Nam là thiết bị cao cấp nhất thuộc dòng Reno thế hệ thứ 6. Được thiết kế cho trải nghiệm quay video chân dung AI, Reno6 Pro hỗ trợ hàng loạt tính năng</p>
+                    <div class="card">
+    
+                        <div class="card-img">
+                            <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
+                                alt="1">
+                        </div>
+                        <div class="card-text">
+                            <p>Bộ GTVT ban hành hướng dẫn tạm thời về việc đi lại của người dân, qua đó các địa phương chỉ cần làm xét nghiệm</p>
+                        </div>
                     </div>
                 </div>
+                <div class="card-container">
+                    <div class="card">
+    
+                        <div class="card-img">
+                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
+                                alt="1">
+                        </div>
+                        <div class="card-text">
+                            <p>OPPO Reno6 Pro 5G tại Việt Nam là thiết bị cao cấp nhất thuộc dòng Reno thế hệ thứ 6. Được thiết kế cho</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+    
+                        <div class="card-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Timoth%C3%A9e_Chalamet_in_2018.jpg"
+                                alt="1">
+                        </div>
+                        <div class="card-text">
+                            <p>Đây là review về Máy in Canon MF445Dw đa chức năng - Bá trong tầm giá của mình. Mình mua nó với giá 10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+    
+                        <div class="card-img">
+                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/8/27/947005/Ronaldo.jpg"
+                                alt="1">
+                        </div>
+                        <div class="card-text">
+                            <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+    
+                        <div class="card-img">
+                            <img src="https://cdnimg.vietnamplus.vn/t870/uploaded/mzdic/2021_09_11/ronaldoghibanmu1.jpg"
+                                alt="1">
+                        </div>
+                        <div class="card-text">
+                            <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="controls">
                 <span class="arrow left">&lt;</span>
-                <span class="arrow right">&rarr;</span>
+                <span class="arrow right">&gt;</span>
                 <ul>
                 </ul>
             </div>
@@ -252,6 +305,5 @@ function timeCarousel(){
 }
 
 setInterval(timeCarousel, 3000);
-
 }
 jsCarousel();

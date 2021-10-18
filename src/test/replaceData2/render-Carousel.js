@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
+function renderCarousel(){
+	var img1 ='https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg', text1 ='Vẫn mang phong cách đẹp, hiện đại, hoàn thiện tỉ mỉ như các chiếc máy tính Surface khác của Microsoft', img2 ='https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both', text2= 'Việc sử dụng smartphone ngày nay không chỉ dừng lại ở nghe, gọi, xem, chơi nữa mà còn dùng nó như một ', img3 = 'https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg',text3 ='Bộ GTVT ban hành hướng dẫn tạm thời về việc đi lại của người dân, qua đó các địa phương chỉ cần làm xét nghiệm', img4 = 'https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both', text4= 'OPPO Reno6 Pro 5G tại Việt Nam là thiết bị cao cấp nhất thuộc dòng Reno thế hệ thứ 6. Được thiết kế cho', img5 ='https://upload.wikimedia.org/wikipedia/commons/5/5f/Timoth%C3%A9e_Chalamet_in_2018.jpg', text5= 'Đây là review về Máy in Canon MF445Dw đa chức năng - Bá trong tầm giá của mình. Mình mua nó với giá 10', img6= 'https://media-cdn.laodong.vn/storage/newsportal/2021/8/27/947005/Ronaldo.jpg', text6 = 'Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...', img7 = 'https://cdnimg.vietnamplus.vn/t870/uploaded/mzdic/2021_09_11/ronaldoghibanmu1.jpg', text7= 'Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...';
+
+	this.css=`* {
   margin: 0px;
   padding: 0px;
 }
@@ -121,11 +116,8 @@ body {
 .layout-carousel .carousel-container .controls ul li.selected {
   background-color: #e96833;
 }
-/*# sourceMappingURL=styleCarousel.css.map */
-    </style>
-</head>
-<body>
-    <div class="layout-carousel">
+/*# sourceMappingURL=styleCarousel.css.map */`;
+	this.html=`<div class="layout-carousel">
     <div class="carousel-title">
         <h1 class="title-brand"><span>e</span>Magazine</h1>
     </div>
@@ -135,11 +127,11 @@ body {
                 <div class="card-container">
                     <div class="card">
                             <div class="card-img">
-                                <img src="${img1}"
+                                <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
                                     alt="1">
                             </div>
                             <div class="card-text">
-                                <p>${text1}</p>
+                                <p>Vẫn mang phong cách đẹp, hiện đại, hoàn thiện tỉ mỉ như các chiếc máy tính Surface khác của Microsoft</p>
                             </div>
                     </div>
                 </div>
@@ -147,11 +139,11 @@ body {
                     <div class="card">
     
                         <div class="card-img">
-                            <img src="${img2}"
+                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
                                 alt="1">
                         </div>
                         <div class="card-text">
-                            <p>${text2}</p>
+                            <p>Việc sử dụng smartphone ngày nay không chỉ dừng lại ở nghe, gọi, xem, chơi nữa mà còn dùng nó như một </p>
                         </div>
                     </div>
                 </div>
@@ -159,11 +151,11 @@ body {
                     <div class="card">
     
                         <div class="card-img">
-                            <img src="${img3}"
+                            <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
                                 alt="1">
                         </div>
                         <div class="card-text">
-                            <p>${text3}</p>
+                            <p>Bộ GTVT ban hành hướng dẫn tạm thời về việc đi lại của người dân, qua đó các địa phương chỉ cần làm xét nghiệm</p>
                         </div>
                     </div>
                 </div>
@@ -171,11 +163,11 @@ body {
                     <div class="card">
     
                         <div class="card-img">
-                            <img src="${img4}"
+                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
                                 alt="1">
                         </div>
                         <div class="card-text">
-                            <p>${text4}</p>
+                            <p>OPPO Reno6 Pro 5G tại Việt Nam là thiết bị cao cấp nhất thuộc dòng Reno thế hệ thứ 6. Được thiết kế cho</p>
                         </div>
                     </div>
                 </div>
@@ -183,11 +175,11 @@ body {
                     <div class="card">
     
                         <div class="card-img">
-                            <img src="${img5}"
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Timoth%C3%A9e_Chalamet_in_2018.jpg"
                                 alt="1">
                         </div>
                         <div class="card-text">
-                            <p>${text5}</p>
+                            <p>Đây là review về Máy in Canon MF445Dw đa chức năng - Bá trong tầm giá của mình. Mình mua nó với giá 10</p>
                         </div>
                     </div>
                 </div>
@@ -195,11 +187,11 @@ body {
                     <div class="card">
     
                         <div class="card-img">
-                            <img src="${img6}"
+                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/8/27/947005/Ronaldo.jpg"
                                 alt="1">
                         </div>
                         <div class="card-text">
-                            <p>${text6}</p>
+                            <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
                         </div>
                     </div>
                 </div>
@@ -207,11 +199,11 @@ body {
                     <div class="card">
     
                         <div class="card-img">
-                            <img src="${img7}"
+                            <img src="https://cdnimg.vietnamplus.vn/t870/uploaded/mzdic/2021_09_11/ronaldoghibanmu1.jpg"
                                 alt="1">
                         </div>
                         <div class="card-text">
-                            <p>${text7}</p>
+                            <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
                         </div>
                     </div>
                 </div>
@@ -224,9 +216,13 @@ body {
             </div>
         </div>
     </div>
-</div>
-    <script>
-        const left = document.querySelector('.left');
+</div>`;
+	document.querySelector('body').innerHTML = `<style>${this.css}</style>${this.html}`;
+}
+renderCarousel()
+
+function jsCarousel(){
+	const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 
 
@@ -309,6 +305,5 @@ function timeCarousel(){
 }
 
 setInterval(timeCarousel, 3000);
-    </script>
-</body>
-</html>
+}
+jsCarousel();
