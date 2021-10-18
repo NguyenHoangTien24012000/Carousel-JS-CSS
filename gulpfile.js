@@ -24,7 +24,7 @@ gulp.task('renderDataCarousel2', function() {
     var data=data[0];
     for(let i in data){arrdata.push(['%'+i+'%',data[i]])}
 
-        gulp.src(['src/test/replaceData/render-Carousel.js'])
+        gulp.src(['src/test/renderJsTest/render-Carousel.js'])
             .pipe(replaceB(arrdata))
 			.pipe(gulp.dest('./src/test/replaceData2'));
 });

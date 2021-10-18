@@ -21,35 +21,6 @@ function setIndex(index) {
     track.style.transform = `translateX(-${cardWidth * index}px)`;
 }
 
-right.addEventListener('click', () => {
-
-
-    if (count === numberItem - numberItemScreen - 1) {
-        count = 0;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count += 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }
-})
-
-left.addEventListener('click', () => {
-    // count = count === 0 ? numberItem - numberItemScreen : count -= 1;
-    if(count === 0){
-        count = numberItem - numberItemScreen - 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count -= 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }
-})
-
-
-
 function createNodeChildeLi() {
     for (let i = 0; i < numberItem - numberItemScreen; i++) {
         var li = document.createElement("li");
@@ -57,27 +28,72 @@ function createNodeChildeLi() {
     }
     document.querySelectorAll('.controls li')[0].classList.add('selected');
 }
-createNodeChildeLi();
 
 
-document.querySelectorAll('.controls li').forEach(function (indicator, index) {
-    indicator.addEventListener('click', function () {
-        document.querySelector('.controls .selected').classList.remove('selected');
-        track.style.transform = `translateX(-${cardWidth * index}px)`;
-        indicator.classList.add('selected');
-    })
-})
-
-function timeCarousel(){
+function timeCarousel() {
     if (count === numberItem - numberItemScreen - 1) {
         count = 0;
         setIndex(count);
         indicatorParents.children[count].classList.add('selected');
-    }else{
+    } else {
         count += 1;
         setIndex(count);
         indicatorParents.children[count].classList.add('selected');
     }
 }
 
+function carouselJs(right, left, indicatorParents, count,) {
+    right.addEventListener('click', () => {
+
+
+        if (count === numberItem - numberItemScreen - 1) {
+            count = 0;
+            setIndex(count);
+            indicatorParents.children[count].classList.add('selected');
+        } else {
+            count += 1;
+            setIndex(count);
+            indicatorParents.children[count].classList.add('selected');
+        }
+    })
+
+    left.addEventListener('click', () => {
+        // count = count === 0 ? numberItem - numberItemScreen : count -= 1;
+        if (count === 0) {
+            count = numberItem - numberItemScreen - 1;
+            setIndex(count);
+            indicatorParents.children[count].classList.add('selected');
+        } else {
+            count -= 1;
+            setIndex(count);
+            indicatorParents.children[count].classList.add('selected');
+        }
+    })
+
+    createNodeChildeLi();
+
+    document.querySelectorAll('.controls li').forEach(function (indicator, index) {
+        indicator.addEventListener('click', function () {
+            document.querySelector('.controls .selected').classList.remove('selected');
+            track.style.transform = `translateX(-${cardWidth * index}px)`;
+            indicator.classList.add('selected');
+        })
+    })
+
+}
 setInterval(timeCarousel, 3000);
+carouselJs(right, left, indicatorParents, count);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
