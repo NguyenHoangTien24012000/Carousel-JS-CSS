@@ -117,102 +117,104 @@ body {
   background-color: #e96833;
 }
 /*# sourceMappingURL=styleCarousel.css.map */`;
-	this.html=`<div class="layout-carousel">
-    <div class="carousel-title">
-        <h1 class="title-brand"><span>e</span>Magazine</h1>
-    </div>
-    <div class="content-carousel">
-        <div class="carousel-container">
-            <div class="track">
-                <div class="card-container">
-                    <div class="card">
+	this.html=`<div class="carouselJS">
+    <div class="layout-carousel">
+        <div class="carousel-title">
+            <h1 class="title-brand"><span>e</span>Magazine</h1>
+        </div>
+        <div class="content-carousel">
+            <div class="carousel-container">
+                <div class="track">
+                    <div class="card-container">
+                        <div class="card">
+                                <div class="card-img">
+                                    <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
+                                        alt="1">
+                                </div>
+                                <div class="card-text">
+                                    <p>Vẫn mang phong cách đẹp, hiện đại, hoàn thiện tỉ mỉ như các chiếc máy tính Surface khác của Microsoft</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>Việc sử dụng smartphone ngày nay không chỉ dừng lại ở nghe, gọi, xem, chơi nữa mà còn dùng nó như một </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+        
                             <div class="card-img">
                                 <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
                                     alt="1">
                             </div>
                             <div class="card-text">
-                                <p>Vẫn mang phong cách đẹp, hiện đại, hoàn thiện tỉ mỉ như các chiếc máy tính Surface khác của Microsoft</p>
+                                <p>Bộ GTVT ban hành hướng dẫn tạm thời về việc đi lại của người dân, qua đó các địa phương chỉ cần làm xét nghiệm</p>
                             </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>Việc sử dụng smartphone ngày nay không chỉ dừng lại ở nghe, gọi, xem, chơi nữa mà còn dùng nó như một </p>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="https://kienthuctonghop.vn/wp-content/uploads/2021/04/timothee-Chalamet-la-ai.jpg"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>Bộ GTVT ban hành hướng dẫn tạm thời về việc đi lại của người dân, qua đó các địa phương chỉ cần làm xét nghiệm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>OPPO Reno6 Pro 5G tại Việt Nam là thiết bị cao cấp nhất thuộc dòng Reno thế hệ thứ 6. Được thiết kế cho</p>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/3/24/892486/Rose-Blackpink-Sinh-.jpg?w=720&crop=auto&scale=both"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>OPPO Reno6 Pro 5G tại Việt Nam là thiết bị cao cấp nhất thuộc dòng Reno thế hệ thứ 6. Được thiết kế cho</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Timoth%C3%A9e_Chalamet_in_2018.jpg"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>Đây là review về Máy in Canon MF445Dw đa chức năng - Bá trong tầm giá của mình. Mình mua nó với giá 10</p>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Timoth%C3%A9e_Chalamet_in_2018.jpg"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>Đây là review về Máy in Canon MF445Dw đa chức năng - Bá trong tầm giá của mình. Mình mua nó với giá 10</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/8/27/947005/Ronaldo.jpg"
-                                alt="1">
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/8/27/947005/Ronaldo.jpg"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
+                            </div>
                         </div>
-                        <div class="card-text">
-                            <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="https://cdnimg.vietnamplus.vn/t870/uploaded/mzdic/2021_09_11/ronaldoghibanmu1.jpg"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="https://cdnimg.vietnamplus.vn/t870/uploaded/mzdic/2021_09_11/ronaldoghibanmu1.jpg"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>Tin đồn trước sự kiện Apple về MacBook Pro mới: không có Touch Bar, 64GB RAM, MagSafe,...</p>
-                        </div>
-                    </div>
+                <div class="controls">
+                    <span class="arrow left">&lt;</span>
+                    <span class="arrow right">&gt;</span>
+                    <ul>
+                    </ul>
                 </div>
-            </div>
-            <div class="controls">
-                <span class="arrow left">&lt;</span>
-                <span class="arrow right">&gt;</span>
-                <ul>
-                </ul>
             </div>
         </div>
     </div>
@@ -222,88 +224,103 @@ body {
 renderCarousel()
 
 function jsCarousel(){
-	const left = document.querySelector('.left');
-const right = document.querySelector('.right');
+	const $ = function (selector) {
+    
+    let slider = document.querySelector(`.${selector}`);
+    
+    let track = slider.querySelector('.track');
+
+    //Kich thuoc the con
+    let cardWidth = slider.querySelector('.card-container').offsetWidth;
+    //So luong the con
+    let numberItem = slider.querySelectorAll('.track .card-container').length;
+    //Kich thuoc tong so the con
+    let widthAllItem = slider.querySelector('.carousel-container').offsetWidth;
+    //kich thuoc carousel
+    let widthScreen = slider.querySelector('.card-container').offsetWidth;
+    //So luong ul li;
+    let numberItemScreen = Math.ceil(widthAllItem / widthScreen);
+
+    let indicatorParents = slider.querySelector('.controls ul');
+
+    let current = 0;
 
 
-const track = document.querySelector('.track');
-
-const cardWidth = document.querySelector('.card-container').offsetWidth;
-
-let count = 0;
-
-const numberItem = document.querySelectorAll('.track .card-container').length;
-
-const widthAllItem = document.querySelector('.carousel-container').offsetWidth;
-const widthScreen = document.querySelector('.card-container').offsetWidth
-const numberItemScreen = Math.ceil(widthAllItem / widthScreen);
-const indicatorParents = document.querySelector('.controls ul');
-
-function setIndex(index) {
-    document.querySelector('.controls .selected').classList.remove('selected');
-    // indicator.classList.add('selected');
-    track.style.transform = `translateX(-${cardWidth * index}px)`;
-}
-
-right.addEventListener('click', () => {
-
-
-    if (count === numberItem - numberItemScreen - 1) {
-        count = 0;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count += 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
+    function next() {
+        slider.querySelector('.right').addEventListener('click', () => {
+            if (current === numberItem - numberItemScreen - 1) {
+                current = 0;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            } else {
+                current += 1;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            }
+          
+        })
     }
-})
-
-left.addEventListener('click', () => {
-    // count = count === 0 ? numberItem - numberItemScreen : count -= 1;
-    if(count === 0){
-        count = numberItem - numberItemScreen - 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count -= 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
+    function prev() {
+        slider.querySelector('.left').addEventListener('click', () => {
+            // current = current === 0 ? numberItem - numberItemScreen : current -= 1;
+            if (current === 0) {
+                current = numberItem - numberItemScreen - 1;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            } else {
+                current -= 1;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            }
+        })
     }
-})
 
-
-
-function createNodeChildeLi() {
-    for (let i = 0; i < numberItem - numberItemScreen; i++) {
-        var li = document.createElement("li");
-        document.querySelector('.controls ul').appendChild(li);
-    }
-    document.querySelectorAll('.controls li')[0].classList.add('selected');
-}
-createNodeChildeLi();
-
-
-document.querySelectorAll('.controls li').forEach(function (indicator, index) {
-    indicator.addEventListener('click', function () {
-        document.querySelector('.controls .selected').classList.remove('selected');
+    function setIndex(index) {
+        slider.querySelector('.controls .selected').classList.remove('selected');
+        // indicator.classList.add('selected');
         track.style.transform = `translateX(-${cardWidth * index}px)`;
-        indicator.classList.add('selected');
-    })
-})
-
-function timeCarousel(){
-    if (count === numberItem - numberItemScreen - 1) {
-        count = 0;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count += 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
+        current = index;
     }
+
+    function createNodeChildLi() {
+        for (let i = 0; i < numberItem - numberItemScreen; i++) {
+            var li = document.createElement("li");
+            slider.querySelector('.controls ul').appendChild(li);
+        }
+        slider.querySelectorAll('.controls li')[0].classList.add('selected');
+    }
+
+    function timeCarousel() {
+        if (current === numberItem - numberItemScreen - 1) {
+            current = 0;
+            setIndex(current);
+            indicatorParents.children[current].classList.add('selected');
+        } else {
+            current += 1;
+            setIndex(current);
+            indicatorParents.children[current].classList.add('selected');
+        }
+    }
+
+    function clickNodeChild(){
+        slider.querySelectorAll('.controls li').forEach(function (indicator, index) {
+            indicator.addEventListener('click', function () {
+                slider.querySelector('.controls .selected').classList.remove('selected');
+                track.style.transform = `translateX(-${cardWidth * index}px)`;
+                indicator.classList.add('selected');
+                current =index;
+            })
+        })
+    }
+
+    setInterval(timeCarousel, 3000);
+    // console.log(current);
+    return next(), prev(), createNodeChildLi(), clickNodeChild();
 }
 
-setInterval(timeCarousel, 3000);
+$('carouselJS');
+
+
+
 }
 jsCarousel();

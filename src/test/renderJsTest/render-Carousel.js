@@ -117,102 +117,104 @@ body {
   background-color: #e96833;
 }
 /*# sourceMappingURL=styleCarousel.css.map */`;
-	this.html=`<div class="layout-carousel">
-    <div class="carousel-title">
-        <h1 class="title-brand"><span>e</span>Magazine</h1>
-    </div>
-    <div class="content-carousel">
-        <div class="carousel-container">
-            <div class="track">
-                <div class="card-container">
-                    <div class="card">
+	this.html=`<div class="carouselJS">
+    <div class="layout-carousel">
+        <div class="carousel-title">
+            <h1 class="title-brand"><span>e</span>Magazine</h1>
+        </div>
+        <div class="content-carousel">
+            <div class="carousel-container">
+                <div class="track">
+                    <div class="card-container">
+                        <div class="card">
+                                <div class="card-img">
+                                    <img src="${img1}"
+                                        alt="1">
+                                </div>
+                                <div class="card-text">
+                                    <p>${text1}</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+        
                             <div class="card-img">
-                                <img src="${img1}"
+                                <img src="${img2}"
                                     alt="1">
                             </div>
                             <div class="card-text">
-                                <p>${text1}</p>
+                                <p>${text2}</p>
                             </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="${img2}"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>${text2}</p>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="${img3}"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>${text3}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="${img4}"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>${text4}</p>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="${img3}"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>${text3}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="${img5}"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>${text5}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="${img6}"
-                                alt="1">
-                        </div>
-                        <div class="card-text">
-                            <p>${text6}</p>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="${img4}"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>${text4}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-    
-                        <div class="card-img">
-                            <img src="${img7}"
-                                alt="1">
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="${img5}"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>${text5}</p>
+                            </div>
                         </div>
-                        <div class="card-text">
-                            <p>${text7}</p>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="${img6}"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>${text6}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+        
+                            <div class="card-img">
+                                <img src="${img7}"
+                                    alt="1">
+                            </div>
+                            <div class="card-text">
+                                <p>${text7}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="controls">
-                <span class="arrow left">&lt;</span>
-                <span class="arrow right">&gt;</span>
-                <ul>
-                </ul>
+                <div class="controls">
+                    <span class="arrow left">&lt;</span>
+                    <span class="arrow right">&gt;</span>
+                    <ul>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -222,88 +224,103 @@ body {
 renderCarousel()
 
 function jsCarousel(){
-	const left = document.querySelector('.left');
-const right = document.querySelector('.right');
+	const $ = function (selector) {
+    
+    let slider = document.querySelector(`.${selector}`);
+    
+    let track = slider.querySelector('.track');
+
+    //Kich thuoc the con
+    let cardWidth = slider.querySelector('.card-container').offsetWidth;
+    //So luong the con
+    let numberItem = slider.querySelectorAll('.track .card-container').length;
+    //Kich thuoc tong so the con
+    let widthAllItem = slider.querySelector('.carousel-container').offsetWidth;
+    //kich thuoc carousel
+    let widthScreen = slider.querySelector('.card-container').offsetWidth;
+    //So luong ul li;
+    let numberItemScreen = Math.ceil(widthAllItem / widthScreen);
+
+    let indicatorParents = slider.querySelector('.controls ul');
+
+    let current = 0;
 
 
-const track = document.querySelector('.track');
-
-const cardWidth = document.querySelector('.card-container').offsetWidth;
-
-let count = 0;
-
-const numberItem = document.querySelectorAll('.track .card-container').length;
-
-const widthAllItem = document.querySelector('.carousel-container').offsetWidth;
-const widthScreen = document.querySelector('.card-container').offsetWidth
-const numberItemScreen = Math.ceil(widthAllItem / widthScreen);
-const indicatorParents = document.querySelector('.controls ul');
-
-function setIndex(index) {
-    document.querySelector('.controls .selected').classList.remove('selected');
-    // indicator.classList.add('selected');
-    track.style.transform = `translateX(-${cardWidth * index}px)`;
-}
-
-right.addEventListener('click', () => {
-
-
-    if (count === numberItem - numberItemScreen - 1) {
-        count = 0;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count += 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
+    function next() {
+        slider.querySelector('.right').addEventListener('click', () => {
+            if (current === numberItem - numberItemScreen - 1) {
+                current = 0;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            } else {
+                current += 1;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            }
+          
+        })
     }
-})
-
-left.addEventListener('click', () => {
-    // count = count === 0 ? numberItem - numberItemScreen : count -= 1;
-    if(count === 0){
-        count = numberItem - numberItemScreen - 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count -= 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
+    function prev() {
+        slider.querySelector('.left').addEventListener('click', () => {
+            // current = current === 0 ? numberItem - numberItemScreen : current -= 1;
+            if (current === 0) {
+                current = numberItem - numberItemScreen - 1;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            } else {
+                current -= 1;
+                setIndex(current);
+                indicatorParents.children[current].classList.add('selected');
+            }
+        })
     }
-})
 
-
-
-function createNodeChildeLi() {
-    for (let i = 0; i < numberItem - numberItemScreen; i++) {
-        var li = document.createElement("li");
-        document.querySelector('.controls ul').appendChild(li);
-    }
-    document.querySelectorAll('.controls li')[0].classList.add('selected');
-}
-createNodeChildeLi();
-
-
-document.querySelectorAll('.controls li').forEach(function (indicator, index) {
-    indicator.addEventListener('click', function () {
-        document.querySelector('.controls .selected').classList.remove('selected');
+    function setIndex(index) {
+        slider.querySelector('.controls .selected').classList.remove('selected');
+        // indicator.classList.add('selected');
         track.style.transform = `translateX(-${cardWidth * index}px)`;
-        indicator.classList.add('selected');
-    })
-})
-
-function timeCarousel(){
-    if (count === numberItem - numberItemScreen - 1) {
-        count = 0;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
-    }else{
-        count += 1;
-        setIndex(count);
-        indicatorParents.children[count].classList.add('selected');
+        current = index;
     }
+
+    function createNodeChildLi() {
+        for (let i = 0; i < numberItem - numberItemScreen; i++) {
+            var li = document.createElement("li");
+            slider.querySelector('.controls ul').appendChild(li);
+        }
+        slider.querySelectorAll('.controls li')[0].classList.add('selected');
+    }
+
+    function timeCarousel() {
+        if (current === numberItem - numberItemScreen - 1) {
+            current = 0;
+            setIndex(current);
+            indicatorParents.children[current].classList.add('selected');
+        } else {
+            current += 1;
+            setIndex(current);
+            indicatorParents.children[current].classList.add('selected');
+        }
+    }
+
+    function clickNodeChild(){
+        slider.querySelectorAll('.controls li').forEach(function (indicator, index) {
+            indicator.addEventListener('click', function () {
+                slider.querySelector('.controls .selected').classList.remove('selected');
+                track.style.transform = `translateX(-${cardWidth * index}px)`;
+                indicator.classList.add('selected');
+                current =index;
+            })
+        })
+    }
+
+    setInterval(timeCarousel, 3000);
+    // console.log(current);
+    return next(), prev(), createNodeChildLi(), clickNodeChild();
 }
 
-setInterval(timeCarousel, 3000);
+$('carouselJS');
+
+
+
 }
 jsCarousel();
